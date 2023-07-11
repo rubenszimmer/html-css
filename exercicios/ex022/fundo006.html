@@ -6,19 +6,29 @@
     <title>Imagem de Fundo</title>
     <style>
         body {
+            height: 100vh; /*Altura da view port*/
             background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
+            background-image: url('imagens/wallpaper002.jpg');            
+            background-position: center center;
+            background-repeat: no repeat; 
+            background-size: cover; /*Cobre todo o conteúdo da tela*/
         }
 
         main {
-            color: white;
+            
+            background-color: white;
             width: 400px;
             padding: 10px;
             margin: auto; /*Posiciona o main no meio da tela*/
             text-align: justify;
             border: 1px solid darkblue;
             border-radius: 15px;
+            box-shadow: 10px 10px 5px rgba(30, 30, 194, 0.185);
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main h1 {
+            text-align: center;
         }
     </style>
 </head>
