@@ -1,14 +1,31 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Rochester&family=Sofia&family=Twinkle+Star&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Rochester', cursive;
+    --fonte3: 'Sofia', cursive;
+    --fonte4: 'Twinkle Star', cursive;
+    --fonte5: 'Sriracha', cursive;
+    --fonte6: 'Passion One', cursive;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
-    padding: 0px;
+    padding: 0px;   
+    font-size: 1em;
 }
 /*Configurações comuns para html e body*/
 html, body {
     min-height: 100vh;  /*vh - view-port da height*/
     background-color: darkgray;
+    font-family: var(--fonte3);
 }
 
 header {
@@ -20,6 +37,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte6);
+    font-size: 3em;    
 }
 
 header > p {
@@ -41,6 +60,8 @@ section {
     padding-bottom: 10vh;
     line-height: 1.3em;  /*Espaçamento de 30% entre as linhas*/
     padding-left: 15px; /*Afastamento lateral esquerda de 15px*/
+    font-family: var(--fonte3);
+    font-size: 1.5em;
 }
 
 section.normal {
