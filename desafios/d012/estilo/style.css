@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/*Configurações comuns para html e body*/
+html, body {
+    min-height: 100vh;  /*vh - view-port da height*/
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px; /* O h1 tem 50px no topo e o p tem 50px no fundo(bottom) */
+}
+/*Configuração do link*/
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+/*Configurações comuns para todas as sections, normal ou imagem*/
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.3em;  /*Espaçamento de 30% entre as linhas*/
+    padding-left: 15px; /*Afastamento lateral esquerda de 15px*/
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+/*O parágrafo que estiver dentro de toda section de imagem, terá um background-color: black*/
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px; /*Ficam 10px, para top, right, bottom and left*/
+}
+
