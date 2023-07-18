@@ -18,9 +18,15 @@
             border: 1px solid black;
             padding: 10px;
         }
-
+        /*Configuração do caption:*/        
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
         /*Todo td da classe num, será alinhado à direita*/
@@ -35,6 +41,7 @@
     <!--
         Anatomia para tabelas grandes:
         Table
+            Caption
             TableHead
                 TableRow, TableData, TableHead
             TableBody
@@ -44,8 +51,10 @@
     -->    
 
     <table>
+        <caption>Dados dos países da União Européia e Estados Brasileiros</caption>
         <thead>
             <tr>
+                <!--Cabeçalhos, que representamos pela tag th(TableHead )-->
                 <th>União européia</th>
                 <th>Ano</th>
                 <th>GDP(milhões US$)</th>
@@ -56,7 +65,7 @@
         </thead>
 
         <tbody>
-            <tr>
+            <tr> <!--tr(TableRow, ou as linhas da tabela)-->
                 <td>Áustria</td>
                 <td>2022</td>
                 <td class="num">471.400.070.000,00 </td>
@@ -179,7 +188,8 @@
 
         <tfoot>
             <tr>
-                <td>Sem dados ainda</td>
+                <th>Totais dos GDP dos países</th>
+                <td>10.000.000.000.000,00</td>
             </tr>
         </tfoot>
     </table>
