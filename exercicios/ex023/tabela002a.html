@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pib União Européia</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        /*Colocando as bordas para TableData(td) e TableHead*/
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        /*Todo td da classe num, será alinhado à direita*/
+        td.num {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pib dos países da União Européia</h1>
+    <!--
+        Anatomia para tabelas grandes:
+        Table
+            TableHead
+                TableRow, TableData, TableHead
+            TableBody
+                TableRow, TableData, TableHead
+            TableFoot
+                TableRow, TableData, TableHead
+    -->    
+
+    <table>
+        <thead>
+            <tr>
+                <th>União européia</th>
+                <th>Ano</th>
+                <th>GDP(milhões US$)</th>
+                <th>Estados brasileiros</th>
+                <th>PIB</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Áustria</td>
+                <td>2022</td>
+                <td class="num">471.400.070.000,00 </td>
+                <td>São Paulo</td>
+                <td class="num">603.400.000.000,00</td>
+            </tr>
+            <tr>
+                <td>Bélgica</td>
+                <td>2022</td>
+                <td class="num">578.604.100.000,00</td>
+                <td>Minas Gerais</td>
+                <td class="num">188,087.318.087.31</td>                
+            </tr>
+            <tr>
+                <td>Bulgária</td>
+                <td>2022</td>
+                <td class="num">89.040.400.000,00</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">76.938.000.000,00</td>
+            </tr>            
+            <tr>
+                <td>Chipre</td>
+                <td>2022</td>
+                <td class="num">28.439.050.000,00</td>
+            </tr>
+            <tr>
+                <td>Czechia</td>
+                <td>2022</td>
+                <td class="num">290.923.530,00</td>
+            </tr>
+            <tr>
+                <td>Alemanha</td>
+                <td>2022</td>
+                <td class="num">4.072.191.740.000,00</td>
+            </tr>
+            <tr>                
+                <td>Dinamarca</td>
+                <td>2022</td>
+                <td class="num">395.403.910.000,00</td>
+            </tr>
+                <td>Espanha</td>
+                <td>2022</td>
+                <td class="num">1.397.509.270.000,00</td>            
+            <tr>
+                <td>Estônia</td>
+                <td>2022</td>
+                <td class="num">38.100.810.000,00</td>
+            </tr>
+            <tr>
+                <td>Finlândia</td>
+                <td>2022</td>
+                <td class="num">280.825.960.000,00</td>                
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>2022</td>
+                <td class="num">2.782.905.330.000,00</td>
+            </tr>
+            <tr>
+                <td>Grécia</td>
+                <td>2022</td>
+                <td class="num">219.065.870.000,00</td>
+            </tr>
+            <tr>
+                <td>Croácia</td>
+                <td>2022</td>
+                <td class="num">70.964.610.000,00</td>
+            </tr>
+            <tr>
+                <td>Hungria</td>
+                <td>2022</td>
+                <td class="num">178.788.570.000,00</td>
+            </tr>
+            <tr>
+                <td>Irlanda</td>
+                <td>2022</td>
+                <td class="num">529.244.870.000,00</td>
+            </tr>
+            <tr>
+                <td>Itália</td>
+                <td>2022</td>
+                <td class="num">2.010.431.600.000,00</td>
+            </tr>
+            <tr>
+                <td>Lituânia</td>
+                <td>2022</td>
+                <td class="num">70.334.300.000,00</td>
+            </tr>
+            <tr>
+                <td>Luxemburgo</td>
+                <td>2022</td>
+                <td class="num">82.274.810.000,00</td>
+            </tr>
+            <tr>
+                <td>Latívia</td>
+                <td>2022</td>
+                <td class="num">41.153.910.000,00</td>
+            </tr>
+            <tr>
+                <td>Malta</td>
+                <td>2022</td>
+                <td class="num">17.765.270.000,00</td>
+            </tr>
+            <tr>
+                <td>Holanda</td>
+                <td>2022</td>
+                <td class="num">991.114.640.000,00</td>
+            </tr>
+            <tr>
+                <td>Poland</td>
+                <td>2022</td>
+                <td class="num">688.176.610.000,00</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td>2022</td>
+                <td class="num">251.945.380.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Sem dados ainda</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
