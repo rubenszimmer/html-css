@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        /*Cria uma borda para as células*/
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }        
+    </style>
+</head>
+<body>
+    <html>Mesclagem de Células</html>
+    <!--Cria uma tabela-->
+    <table>
+        <!--Cria Quatro linhas com Quatro células para cada linha-->
+        <tr>
+            <!--Cria três células-->
+            <td>A</td>
+            <!--A coluna B ocupará além do próprio espaço, o espaço da coluna C, através da tag colspan="2"-->
+            <td colspan="2">B</td>            
+        </tr>
+        <tr>
+            <!--Cria três células-->
+            <td rowspan="3">D</td> <!--O D, ocupará o espaço de 2 linhas-->
+            <td>E</td>
+            <td rowspan="2">F</td> 
+        </tr>
+        <tr>                       
+            <!--O F ocupará o espaço da letra I, então apagamos a letra I-->
+            <td>H</td>
+            
+        </tr>
+        <tr>                 
+            <!--O M ocupará duas colunas(colspan)-->            
+            <td colspan="2">M</td>
+        </tr>
+    </table>
+</body>
+</html>

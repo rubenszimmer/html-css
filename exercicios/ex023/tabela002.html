@@ -8,21 +8,43 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
+        /*Para fixarmos os títulos das colunas no alto do cabeçalho, colocaremos um "position: relative;"*/
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
-        }
+        }      
 
+        .c {
+            width: 50px;
+        }
+        
         thead, tfoot {
-            background-color: gray;
+            background-color: #3838cc;
             color: white;
         }
+        /*Continua a configuração para fixar os títulos das tabelas no alto do cabeçalho*/        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #3838cc;
+        }
+
+        /*Outra opção ao número de linhas, é opção abaixo:*/
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;            
+        }
+
         /*Todo td(table data, da classe num, será alinhado à direita*/
         td.num {
             text-align: right;
@@ -41,19 +63,21 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE:
-            TableHEAD
+        CAPTION
+            THEAD
+                TR(TableRow), TD(TableData), TH(TableHead)
+                TableBODY(Tabela do Corpo)
                 TR(TableRow), TD(TableData), TH(TableHeader)
-            TableBODY(Tabela do Corpo)
-                TR(TableRow), TD(TableData), TH(TableHeader)
-            TableFOOTER(Tabela do Rodapé)
+                TableFOOTER(Tabela do Rodapé)
                 TR(TableRow), TD(TableData), TH(TableHeader)
     -->
     <!--Criando a Tabela-->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                 <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -168,7 +192,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
