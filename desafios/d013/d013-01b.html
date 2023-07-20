@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários de uma Biblioteca</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela dos Usuários da Biblioteca</h1>
+    <table>
+        <tr>
+            <td><strong>Usuário</strong></td>
+            <td><strong>Material</strong></td>
+            <td><strong>Qtd. Máx.</strong></td>
+            <td><strong>Prazo(dias)</strong></td>
+        </tr>
+        
+        <tr>
+            <td rowspan="2"><strong>Alunos de graduação</strong></td>
+            <td>Livros</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td>Periódicos</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2"><strong>Alunos de TCC e Pós Graduação</strong></td>
+            <td>Livros</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td>Periódicos</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2"><strong>Professores</strong></td>
+            <td>Livros</td>
+            <td>5</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>Periódicos</td>
+            <td>5</td>
+            <td>10</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
