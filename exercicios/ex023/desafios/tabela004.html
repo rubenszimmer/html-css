@@ -23,6 +23,10 @@
             border: 1px solid gray;
             padding: 10px;
         }
+
+        .alinha {
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -33,14 +37,20 @@
         </caption>
         <thead>
             <tr>
-                <th><strong>Grupos</strong></th>                         
-                <th><strong>Nomes</strong></th>            
-                <th colspan="3"><strong>Filmes</strong></th>
+                <th scope="col">Grupos</th>                         
+                <th scope="col">Nomes</th>            
+                <th scope="colgroup" colspan="3">Filmes</th> <!--Esse título Filmes, é um conjunto de coluna, logo é um colgroup-->
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th scope="row" class="alinha" colspan="4">Total</th>           
+                <td>1000</td>     
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
-                <th rowspan="3"><strong>Mulheres</strong></th> <!--TableHead-->
+                <th scope="rowgroup" rowspan="3"><strong>Mulheres</strong></th> <!--TableHead-->
                 <td>Ana Maria</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -59,7 +69,7 @@
                 <td>Big Heroe</td>
             </tr>
             <tr>
-                <th rowspan="3"><strong>Homens</strong></th> <!--TableHead-->
+                <th scope="colgroup" rowspan="3"><strong>Homens</strong></th> <!--TableHead-->
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -77,6 +87,7 @@
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
             </tr>
+            
         </tbody>
     </table>
     
