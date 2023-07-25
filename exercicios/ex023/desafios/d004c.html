@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 700px;
+        }
+
+        caption {
+            font-size: 1.em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(233, 55, 233);
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boletim</h1>
+    <table>
+        <caption><strong>Boletim Escolar</strong></caption>
+        <thead>
+            <!--Criam as linhas do cabeçalho-->
+            <tr>
+                <th scope="col">Grupo</th> <!--Como temos apenas uma coluna, não precisamos definir como uma coluna-->
+                <th scope="col">Nomes</th> <!--Como temos apenas uma coluna, não precisamos definir como uma coluna-->
+                <th scope="colgroup" colspan="3">Filmes</th> <!--Grupo de TRÊS colunas, e precisaremos definir o scope =colgroup-->
+            </tr>
+        </thead>
+        <tbody> <!--Cria o cabeçalho da Tabela-->
+           <tr>
+            <!--Na mesma linha de cada nome corresponderão três filmes preferenciais-->
+            <th rowspan="3">Mulheres</th>
+            <td>Ana Maria dos Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadaores</td>
+           </tr>
+           <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+           </tr>
+           <tr>
+            <td>Claudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+           </tr>
+           <tr>
+            <th rowspan="3">Homens</th> <!--Na mesma linha de cada nome corresponderão três filmes preferenciais-->
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+           </tr>
+           <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Old Boy</td>
+            <td>Dangal</td>
+           </tr>
+           <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+           </tr>
+           
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

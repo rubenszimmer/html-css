@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid darkblue;
+            width: 700px;
+        }
+
+        caption {
+            font-size: 1.em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(133, 31, 31);
+            color: white;
+        }               
+
+        th, td {            
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .cor00 {
+            background-color: gray;
+            color: white;            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Boletim dos Alunos</h1>
+    <table>
+        <caption>Boletim de notas</caption>
+        <thead class="cor00">
+            <tr>
+                <!--Todos os th, têm que ser rowspan=2, para que Nota1 e Nota2, se encaixem dentro de Notas, porque o th Notas está dividido em DUAS linhas-->
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplias</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota1</th>
+                <th>Nota2</th>
+            </tr>
+            </thead>
+
+            <tbody >
+                <tr>
+                    <td rowspan="4"><strong>Exatas</strong></td>
+                    <td>Matemática</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>                    
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+            </tbody>
+        
+    </table>
+    
+</body>
+</html>
