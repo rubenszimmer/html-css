@@ -33,6 +33,14 @@
             color: white;            
         }
 
+        .medias {
+            text-align: left;
+        }
+
+        .alinhar {
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
@@ -42,44 +50,82 @@
         <thead class="cor00">
             <tr>
                 <!--Todos os th, têm que ser rowspan=2, para que Nota1 e Nota2, se encaixem dentro de Notas, porque o th Notas está dividido em DUAS linhas-->
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplias</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplias</th>
+                <th colspan="2" scope="col">Notas</th>
+                <th rowspan="8" scope="col">Média</th>
             </tr>
             <tr>
-                <th>Nota1</th>
-                <th>Nota2</th>
+                <th scope="col">Nota1</th>
+                <th scope="col">Nota2</th>
             </tr>
             </thead>
 
             <tbody >
                 <tr>
-                    <td rowspan="4"><strong>Exatas</strong></td>
+                    <th rowspan="4" scope="rowgroup"><strong>Exatas</strong></th>
                     <td>Matemática</td>
-                    <td>0.0</td>
-                    <td>0.0</td>
-                    <td>0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
                 </tr>
                 <tr>
                     <td>Física</td>
-                    <td>0.0</td>
-                    <td>0.0</td>
-                    <td>0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
                 </tr>
                 <tr>
                     <td>Química</td>
-                    <td>0.0</td>
-                    <td>0.0</td>
-                    <td>0.0</td>                    
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>                    
                 </tr>
                 <tr>
                     <td>Biologia</td>
-                    <td>0.0</td>
-                    <td>0.0</td>
-                    <td>0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                </tr>    
+                <tr>
+                    <th class="medias" scope="row" colspan="4">Média de Exatas</th>
+                    <td class="alinhar">0.0</td>
+                </tr>    
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Humanas</th> <!--rowspan="4", permite um agrupamento de 4 linhas-->
+                    <td>História</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
                 </tr>
-            </tbody>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                </tr>
+                <tr>
+                    <td>Português</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                </tr>
+                <tr>
+                    <td>Russo</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                    <td class="alinhar">0.0</td>
+                </tr>
+                <tr>
+                    <th class="medias" scope="row" colspan="4">Média de Humanas</th>
+                    <td class="alinhar">0.0</td>
+                </tr>
+                
+                
+            </tbody>           
+             
+
+            
         
     </table>
     
