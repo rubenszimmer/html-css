@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*Estilos para Telas*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgb(158, 158, 158);
+}
+/*h1 que está contido dentro de header*/
+header > h1 {
+    text-align: center;
+}
+/*Ítens do menu. As bolinhas estão escondidas no canto esquerdo*/
+menu ul {
+    list-style-type: none;
+    background-color: gray;
+}
+
+menu li {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    /*Os ítens de menu ficam um ao lado do outro.*/
+    display: inline-block;
+    padding: 10px;
+}
+
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+    text-align: justify;
+}
