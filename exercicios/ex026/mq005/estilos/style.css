@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
 * {
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
 body, html {
+    /* Todo o trecho de html e body */
     background-color: lightgray;
 }
 
@@ -41,3 +43,24 @@ menu > ul > li > a {
 menu > ul > li > a:hover {
     background-color: gray;
 }
+
+main {
+    width: 90vw;
+    background-color: white;
+    /* Centralizar o main*/
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;  /* Espaçamento entre parágrafos */
+    text-indent: 20px;  /* Dá um espaçamento no início de cada parágrafo*/
+}
+ 
