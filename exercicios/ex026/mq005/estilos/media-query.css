@@ -13,10 +13,24 @@ Grandes telas: acima de 1200px
 * {
     box-sizing: border-box;
 }
-/* Dispositivos até 768px, exibirão o ícone do hamburguinho, acima dessa resolução, somente */
+/* Dispositivos até 768px, exibirão o ícone do hamburguinho, 
+acima dessa resolução, será exibido o o menu normal */
 @media screen and (min-width: 768px) {
     span#burger {
         display: none;
+    }
+    /* Exibe o menu */
+    menu {
+        display: block;
+    }
+    /* Colocado os menus em linha */
+    menu > ul > li {
+        display: inline-block;
+        width: 150px;        
+    }
+    /* A tela será travada na largura de 768px, mesmo em telas grandes */
+    main {
+        width: 768px;
     }
 }
  
